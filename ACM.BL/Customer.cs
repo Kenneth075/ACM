@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -44,18 +45,51 @@ namespace ACM.BL
             }
             
         }
+        public static int IntanceCount { get; set; }
 
-       /* public string LastName
+        public bool Validate()   //Creating a method/function for validation.
         {
-            get                            
-            {
-                return LastName;      //Use this syntax when there is a lot of logic.
-            }
+            var Isvalid = true;
+
+            if (string.IsNullOrWhiteSpace(FirstName)) Isvalid = false;
+            if (string.IsNullOrWhiteSpace(EmailAddress)) Isvalid = false;
+
+            return Isvalid;
+        }
+
+        public Customer Retrieve(int customerId)  //Function To retrieve a define customer data.
+        {
+            
+            return new Customer();
+        }
+
+        public List<Customer> RetrieveAll()   //Retrieve function for multiple customers data.
+        { 
+            return new List<Customer>();
+        }
+        public bool Save()  //Save Function.
+        {
+            //Code that save the define customer data.
+
+            return true;
+        }
+        
+
+
+
+        /* public string LastName
+         {
+             get                            
+             {
+                 return LastName;      //Use this syntax when there is a lot of logic.
+             }
             set
             {
                 LastName = value;
             }
-        }*/
+         }*/
+
+
 
 
     }
