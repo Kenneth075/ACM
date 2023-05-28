@@ -47,7 +47,7 @@ namespace ACM.BL
         }
         public static int IntanceCount { get; set; }
 
-        public bool Validate()   //Creating a method/function for validation.
+        public bool Validate()   //Method/function for validation.
         {
             var Isvalid = true;
 
