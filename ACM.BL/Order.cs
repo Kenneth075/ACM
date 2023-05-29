@@ -8,9 +8,19 @@ namespace ACM.BL
 {
     internal class Order
     {
+        public Order()
+        {
+
+        }
+
+        public Order(int OrderID)
+        {
+            OrderId = OrderID;
+        }
+       
         public DateTimeOffset? OrderDate { get; set; }
         
-        public int OrderID { get; set; }
+        public int OrderId { get; set; }
 
         //Validate
         public bool Validate()

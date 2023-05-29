@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ACM.BL
 {
-    internal class Product
+    public class Product
     {
         public Product()
         {
@@ -45,7 +45,7 @@ namespace ACM.BL
 
 
         //Retrieving one product.
-        public Product Retrieve (int ProductId)
+        /*public Product Retrieve (int ProductId)
         {
             return new Product();   //Code thats retrieve a define product.
         }
@@ -60,7 +60,7 @@ namespace ACM.BL
         public bool Save()
         {
             return true;
-        }
+        }*/
 
       
 

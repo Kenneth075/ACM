@@ -67,39 +67,18 @@ namespace ACM.BL
             if (string.IsNullOrWhiteSpace(EmailAddress)) Isvalid = false;
 
             return Isvalid;
-        }
+        }   
 
-        public Customer Retrieve(int customerId)  //Function To retrieve a define customer data.
-        {
-            
-            return new Customer();
-        }
-
-        public List<Customer> RetrieveAll()   //Retrieve function for multiple customers data.
+        /*public List<Customer> RetrieveAll()   //Retrieve function for multiple customers data.
         { 
             return new List<Customer>();
-        }
-        public bool Save()  //Save Function.
-        {
-            //Code that save the define customer data.
+        }*/
 
-            return true;
-        }
         
 
 
 
-        /* public string LastName
-         {
-             get                            
-             {
-                 return LastName;      //Use this syntax when there is a lot of logic.
-             }
-            set
-            {
-                LastName = value;
-            }
-         }*/
+       
 
 
 
