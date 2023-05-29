@@ -8,5 +8,46 @@ namespace ACM.BL
 {
     internal class Order
     {
+        public DateTimeOffset? OrderDate { get; set; }
+        
+        public int OrderID { get; set; }
+
+        //Validate
+        public bool Validate()
+        {
+            var IsValid = true;
+
+            if(OrderDate == null)
+                IsValid = false;
+
+            return IsValid;
+        }
+
+        //Retrieve
+        public Order Retrieve(int OrderID)
+        {
+            return new Order();
+        }
+
+        //Retrieve for multiple OrderID's
+        public List<Order> Retrieve()
+        {
+            return new List<Order>();
+        }
+
+        //Save
+        public bool Save()
+        {
+            return true;
+        }
+ 
+    
+    
+    
+    
+    
+    
+    
+    
     }
 }
