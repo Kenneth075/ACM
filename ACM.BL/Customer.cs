@@ -9,17 +9,19 @@ namespace ACM.BL
 {
     public class Customer
     {
-        public Customer()
+        public Customer():this(0)  //Constructor chaining technique; allows a constructor to call another constructor.
         {
             
         }
 
         public Customer(int CoustomerId)
         {
-            CustomerID = CoustomerId;  
+            CustomerID = CoustomerId;
+            AddressList = new List<Address>();
         }
 
-
+        public List<Address> AddressList { get; set; }  //Creating a list of addresses to allow for any number of related addresses.
+                                                        //NB: List does not have a good default value.
         public int CustomerID { get;private set; }
 
         public string EmailAddress { get; set; }
