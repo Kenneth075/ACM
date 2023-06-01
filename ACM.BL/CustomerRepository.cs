@@ -24,6 +24,7 @@ namespace ACM.BL
                 customer.EmailAddress = "edoho@gmail.com";
                 customer.FirstName = "Ken";
                 customer.LastName = "Edoho";
+                
             }
             return customer;
         }
