@@ -32,9 +32,29 @@ namespace ACM.BL
             var Addresslist=new List<Address>();
             Address address = new Address(1)
             {
+                AddressType = 1,
+                StreetLine1 = "Bey",
+                StreetLine2 = "Bey Ave",
+                Country = "Nigeria",
+                State = "Lagos",
+                City = "Lekki",
+                PostalCode = "303",
+            };
+            Addresslist.Add(address);
 
-            }
-
+            address = new Address(2)
+            {
+                AddressType = 2,
+                StreetLine1 = "Ring Road",
+                StreetLine2 = "Estate Gate",
+                Country = "Nigeria",
+                State = "Edo",
+                City = "Benin",
+                PostalCode = "222"
+            };
+            Addresslist.Add(address);
+            
+            return Addresslist;
         }
         public bool Save(Address address)
         {

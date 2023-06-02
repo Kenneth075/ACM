@@ -20,6 +20,7 @@ namespace ACM.BL
             AddressList = new List<Address>();
         }
 
+        public int CustomerType { get; set; }
         public List<Address> AddressList { get; set; }  //Creating a list of addresses to allow for any number of related addresses.
                                                         //NB: List does not have a good default value.
         public int CustomerID { get;private set; }

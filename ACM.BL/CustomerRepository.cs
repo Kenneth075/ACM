@@ -8,6 +8,14 @@ namespace ACM.BL
 {
     public class CustomerRepository
     {
+        public CustomerRepository()
+        {
+            addressRepository = new AddressRepository();  //Establishing a collabrating relationship between the
+                                                          //customerRepository and the AddressRepository.
+            
+        }
+        private AddressRepository addressRepository { get; set; }
+
         //Retrieve one customer.
         public Customer Retrieve(int customerId)
         {
@@ -24,6 +32,8 @@ namespace ACM.BL
                 customer.EmailAddress = "edoho@gmail.com";
                 customer.FirstName = "Ken";
                 customer.LastName = "Edoho";
+
+                customer.AddressList=addressRepository.RetrieveByCustomerId(customerId).ToList(); //ToList(); is a link method.
                 
             }
             return customer;

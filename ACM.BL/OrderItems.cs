@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ACM.BL
 {
-    internal class OrderItems
+    public class OrderItems
     {
         public OrderItems()
         {
